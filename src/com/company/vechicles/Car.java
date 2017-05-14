@@ -13,22 +13,20 @@ public class Car {
     String mark;
     String clas;
     int veight;
-
     Driver driver = new Driver();
-
     Engine engine = new Engine();
 
     int getVeight(){return veight;}
     String getMark(){return mark;}
     String getClas(){return clas;}
 
-    void setVeight(){this.veight = veight;}
-    void setMark(){this.mark = mark;}
-    void setClas(){this.clas = clas;}
+    void setVeight(int veight){this.veight = veight;}
+    void setMark(String mark){this.mark = mark;}
+    void setClas(String clas){this.clas = clas;}
 
-     private void printInfo(){
-        System.out.println(engine.getPower());
-    }
+    //public void printInfo(){
+      //  System.out.println(car.getVeight());
+    //}
 
     void start(){
         System.out.println("Поехали");
@@ -44,7 +42,18 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car engine = new Car();
-        engine.printInfo();
+        Car car = new Car();
+        Driver driver = new Driver();
+        Engine engine = new Engine();
+
+        engine.setManufacturer("BMW");
+        engine.setPower(200);
+        car.setClas("S");
+        car.setMark("KIA");
+        car.setVeight(1000);
+        driver.setFullName("Vova");
+        driver.setExp(5);
+       // car.printInfo();
+
     }
 }

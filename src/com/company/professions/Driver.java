@@ -7,6 +7,6 @@ public class Driver {
     int getExp(){return exp;}
     String getFullName(){return fullName;}
 
-    void setFullName(){this.fullName = fullName;}
-    void setExp(){this.exp = exp;}
+    public void setFullName(String fullName){this.fullName = fullName;}
+    public void setExp(int exp){this.exp = exp;}
 }
