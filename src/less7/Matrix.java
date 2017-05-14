@@ -3,13 +3,17 @@ package less7;
 import java.util.Arrays;
 
 public class Matrix {
-    private static double matrix[][] = {
+    /*private static double matrix[][] = {
             {0.1, 2.2},
-            {1.1, 2.1}};
+            {1.1, 2.1}};*/
+
+
+
+
     private int line;
     private int column;
 
-    public static double[][] sum(double[][] array1, double[][] array2) {
+      double[][] sum(double[][] array1, double[][] array2) {
         double sum[][] = new double[2][2];
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array1.length; j++)
@@ -18,7 +22,7 @@ public class Matrix {
         return sum;
     }
 
-    public static double[][] multi(double[][] array1, int x) {
+      private double[][] multi(double[][] array1, int x) {
         double arrmulti[][] = new double[2][2];
         for (int i = 0; i < array1.length; i++) {
             for (int j = 0; j < array1.length; j++)
@@ -27,18 +31,16 @@ public class Matrix {
         return arrmulti;
     }
 
-    public static void print(double array[][]) {
-        System.out.println(Arrays.deepToString(array));
+       void print(Matrix matrix[][]) {
+        System.out.println(Arrays.deepToString(matrix));
 
     }
 
     public static void main(String[] args) {
-        double arr[][] = {
-                {1.2, 1.5},
-                {1.2, 1.2}};
-        print(matrix);
-        print(arr);
-        print(sum(arr, matrix));
-        print(multi(arr, 100));
+         Matrix matrix[][] = new Matrix;
+        matrix[][].print;
+       // print(arr);
+        //print(sum(arr, matrix));
+       // print(multi(arr, 100));
     }
 }

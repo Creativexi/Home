@@ -3,57 +3,52 @@ package com.company.vechicles;
 import com.company.details.Engine;
 import com.company.professions.Driver;
 
-/**
- Класс Car содержит поля - марка автомобиля, класс автомобиля, вес, водитель типа Driver, мотор типа Engine.
- Методы start(), stop(), turnRight(), turnLeft(), которые выводят на печать:
- "Поехали", "Останавливаемся", "Поворот направо" или "Поворот налево".
- А также метод printInfo(), который выводит полную информацию об автомобиле, ее водителе и моторе.
- */
 public class Car {
-    String mark;
-    String clas;
-    int veight;
-    Driver driver = new Driver();
-    Engine engine = new Engine();
+    private String mark;
+    private String clas;
+    private int veight;
 
-    int getVeight(){return veight;}
-    String getMark(){return mark;}
-    String getClas(){return clas;}
-
-    void setVeight(int veight){this.veight = veight;}
-    void setMark(String mark){this.mark = mark;}
-    void setClas(String clas){this.clas = clas;}
-
-    //public void printInfo(){
-      //  System.out.println(car.getVeight());
-    //}
-
-    void start(){
+    private int getVeight() {return veight;}
+    private String getMark() {return mark;}
+    private String getClas() {return clas;}
+    private void setVeight(int veight) {this.veight = veight;}
+    private void setMark(String mark) {this.mark = mark;}
+    private void setClas(String clas) {this.clas = clas;}
+    private void start() {
         System.out.println("Поехали");
     }
-    void stop(){
+    private void stop() {
         System.out.println("Останавливаемся");
     }
-    void left(){
+    private void left() {
         System.out.println("Поворот налево");
     }
-    void right(){
+    private void right() {
         System.out.println("Поворот направо");
+    }
+    private void printInfo(Car car, Engine engine, Driver driver) {
+        System.out.println("Машина: " + car.getMark() + " класса: " + car.getClas() + ". Вес: " + car.getVeight() + "кг");
+        System.out.println("Водитель: " + driver.getFullName() + ", стаж вождения: " + driver.getExp());
+        System.out.println("Производитель двигателя: " + engine.getManufacturer() + ", мощность: " + engine.getPower());
     }
 
     public static void main(String[] args) {
         Car car = new Car();
-        Driver driver = new Driver();
         Engine engine = new Engine();
-
+        Driver driver = new Driver();
         engine.setManufacturer("BMW");
         engine.setPower(200);
         car.setClas("S");
         car.setMark("KIA");
         car.setVeight(1000);
-        driver.setFullName("Vova");
+        driver.setFullName("Владимир");
         driver.setExp(5);
-       // car.printInfo();
-
+        car.printInfo(car, engine, driver);
+        car.left();
+        car.right();
+        car.start();
+        car.stop();
     }
+
+
 }

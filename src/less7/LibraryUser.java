@@ -27,33 +27,17 @@ class LibraryUser {
     int getTel() {
         return tel;
     }
-
     private Scanner sc = new Scanner(System.in);
-    private void setFullName() {this.fullName = sc.nextLine();}
-    private void setFaculty() {this.faculty = sc.nextLine();}
-    private void setTicketNum() {
+    public void setFullName() {this.fullName = sc.nextLine();}
+    public void setFaculty() {this.faculty = sc.nextLine();}
+    public void setTicketNum() {
         this.ticketNum = sc.nextInt();
     }
-    private void setBirthDate() {this.birthDate = sc.nextInt();}
-    private void setTel() {this.tel = sc.nextInt();}
-
-    void userset() {
-        System.out.println("Ведите ФИО");
-        setFullName();
-        System.out.println("Введите факультет");
-        setFaculty();
-        System.out.println("Введите № билета");
-        setTicketNum();
-        System.out.println("Введите год рождения");
-        setBirthDate();
-        System.out.println("Введите телефон");
-        setTel();
-    }
-
+    public void setBirthDate() {this.birthDate = sc.nextInt();}
+    public void setTel() {this.tel = sc.nextInt();}
     void takeBook() {
         System.out.println(getFullname() + " взял книгу");
     }
-
     void returnBook() {
         System.out.println(getFullname() + " вернул книгу");
     }
