@@ -37,8 +37,8 @@ public class Matrix {
     }
 
     public static void main(String[] args) {
-         Matrix matrix[][] = new Matrix;
-        matrix[][].print;
+         Matrix matrix[][] = new Matrix[2][2];
+        matrix[[].print(matrix);
        // print(arr);
         //print(sum(arr, matrix));
        // print(multi(arr, 100));
