@@ -24,9 +24,7 @@ class LibraryUser {
     int getBirthDate() {
         return birthDate;
     }
-    int getTel() {
-        return tel;
-    }
+    int getTel() {return tel;}
     private Scanner sc = new Scanner(System.in);
     public void setFullName() {this.fullName = sc.nextLine();}
     public void setFaculty() {this.faculty = sc.nextLine();}
