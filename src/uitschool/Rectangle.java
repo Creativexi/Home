@@ -1,4 +1,4 @@
-package uitschool;
+package uitschool ;
 
 public class Rectangle extends Shape {
     double x1;
