@@ -8,7 +8,7 @@ public class BooksDemo {
         books[0] = book1;
         books[1] = book2;
         for (Printable x: books){
-            x.print();
+            x.print() ;
         }
     }
 }
