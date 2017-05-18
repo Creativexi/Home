@@ -1,59 +1,55 @@
 package less7;
 
 public class Matrix {
-    private double matrix[][] = {
-            {0.1, 2.2},
-            {1.1, 2.1}};
+    private double[][] matrix;
     private int line;
     private int column;
 
-    private int getRowsQuantity() {
-        return matrix.length;
+    public Matrix(int line, int column) {
+        matrix = new double[line][column];
+        this.line = line;
+        this.column = column;
     }
-    private int getColumnsQuantity() {
-        return matrix[0].length;
+
+    public void setElement(int line, int column, double value) {
+        matrix[line][column] = value;
     }
-    void setMatrix() {
-        this.matrix = matrix;
+
+    public void fillMatrix() {
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < column; j++) {
+                this.setElement(i, j, Math.random());
+            }
+        }
     }
-    public double[][] getMatrix() {
+
+    public double matrixGetElement(int line, int column) {
+        return matrix[line][column];
+    }
+
+    public Matrix sum(Matrix matrix) {
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < column; j++)
+                matrix.setElement(i, j, matrix.matrixGetElement(i, j) + this.matrixGetElement(i, j));
+        }
         return matrix;
     }
-    double[][] sum(double[][] array1, double[][] array2) {
-        double sum[][] = new double[2][2];
-        for (int i = 0; i < array1.length; i++) {
-            for (int j = 0; j < array1.length; j++)
-                sum[i][j] = array1[i][j] + array2[i][j];
+
+    public Matrix multi(Matrix matrix, int x) {
+
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < column; j++)
+                matrix.setElement(i, j, matrix.matrixGetElement(i, j) * x);
         }
-        return sum;
+        return matrix;
     }
-    double[][] multi(int x) {
-        double[][] m = new Matrix().getMatrix();
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix.length; j++)
-                m[i][j] = matrix[i][j] * x;
-        }
-        return m;
-    }
-    public void print(double[][] matrix) {
-        for (int i = 0; i < this.getRowsQuantity(); i++) {
-            for (int j = 0; j < this.getColumnsQuantity(); j++) {
-                System.out.print(matrix[i][j] + "\t");
+
+    public void print(Matrix matrix) {
+        for (int i = 0; i < line; i++) {
+            for (int j = 0; j < column; j++) {
+                System.out.print(this.matrix[i][j]);
             }
             System.out.println();
         }
-    }
-    public static void main(String[] args) {
-        Matrix matrix1 = new Matrix();
-        Matrix matrix2 = new Matrix();
-        Matrix arrsum = new Matrix();
-        System.out.println("matrix1:");
-        matrix1.print(matrix1.getMatrix());
-        System.out.println("matrix2");
-        matrix2.print(matrix2.getMatrix());
-        System.out.println("matrix * 4:");
-        matrix1.print(matrix1.multi(4));
-        System.out.println("matrix1 + matrix2:");
-        arrsum.print(arrsum.sum(matrix1.getMatrix(), matrix2.getMatrix()));
     }
 }
