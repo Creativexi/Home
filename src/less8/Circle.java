@@ -1,8 +1,8 @@
 package less8;
 
 public class Circle {
-    int radius;
-    final double pi = 3.14;
+    private int radius;
+    private final double pi = 3.14;
 
     public Circle(int radius) {
         this.radius = radius;
