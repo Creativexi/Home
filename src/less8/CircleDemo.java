@@ -1,7 +1,5 @@
 package less8;
 
-import less8.Circle;
-
 public class CircleDemo {
     public static void main(String[] args) {
         Circle circle1 = new Circle(3);
