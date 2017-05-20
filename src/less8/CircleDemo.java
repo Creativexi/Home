@@ -1,4 +1,4 @@
-package less8.flower;
+package less8;
 
 import less8.Circle;
 
