@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77be6419-a740-4e2f-b2a9-5c74975369d5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/LibraryUser.java" afterPath="$PROJECT_DIR$/src/less7/LibraryUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/Matrix.java" afterPath="$PROJECT_DIR$/src/less7/Matrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/MatrixDemo.java" afterPath="$PROJECT_DIR$/src/less7/MatrixDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="77be6419-a740-4e2f-b2a9-5c74975369d5" name="Default" comment="" />
     <list id="4f42e06f-32b9-4d12-b9f1-de01e4ce62e5" name="Rejected commit: Default" comment="home" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -650,7 +645,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495305331020</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="home">
+      <created>1495354660569</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1495354660570</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1051,6 +1052,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.328841">
           <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
