@@ -35,16 +35,14 @@ public class Matrix {
         return matrix;
     }
 
-    public Matrix multi(Matrix matrix, int x) {
-
+    public void multi( int x) {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++)
-                matrix.setElement(i, j, matrix.matrixGetElement(i, j) * x);
+                this.setElement(i, j, this.matrixGetElement(i, j) * x);
         }
-        return matrix;
     }
 
-    public void print(Matrix matrix) {
+    public void print() {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++) {
                 System.out.print(this.matrix[i][j]);
@@ -53,3 +51,4 @@ public class Matrix {
         }
     }
 }
+//в суммах проверить на равнозначность матриц

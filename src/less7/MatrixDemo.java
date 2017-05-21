@@ -8,13 +8,13 @@ public class MatrixDemo {
         matrix2.fillMatrix();
 
         System.out.println("matrix1:");
-        matrix1.print(matrix1);
+       // matrix1.print(matrix1);
         System.out.println("matrix2");
-        matrix2.print(matrix2);
+        //matrix2.print(matrix2);
         System.out.println("sum");
         matrix1 = matrix1.sum(matrix2);
-        matrix1.print(matrix1);
+        //matrix1.print(matrix1);
         System.out.println("multiply");
-        matrix1.print(matrix1.multi(matrix1, 5));
+    //    matrix1.print(matrix1.multi(matrix1, 5));
     }
 }
