@@ -1,10 +1,19 @@
 package less8.flower;
 
-public class FlowerDemo {
-    Flower flower1 = new Flower("Rose", 20);
-    Flower flower2 = new Flower("Lotus", 25);
-    Flower flower3 = new Flower("Lily", 15);
-    Flower flower4 = new Flower("Daisy", 10);
+import static less8.flower.Flower.getBouquet;
 
+public class FlowerDemo {
+    public static void main(String[] args) {
+
+        Flower flowers[] = new Flower[]{
+            new Flower("Rose", 20),
+            new Flower("Lotus", 25),
+            new Flower("Lily", 15),
+            new Flower("Daisy", 10),
+            new Flower("Aster", 22),
+        };
+
+        Booket booket1 = getBouquet(flowers);
+        }
 
 }
