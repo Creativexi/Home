@@ -56,7 +56,7 @@ class LibraryUser {
     }
 
     void takeBook(Book book) {
-        System.out.println("Читатель " + getFullname() + " взял книгу - " + book.getBookname());
+        System.out.println("Читатель " + getFullname() + " взял книгу - " + book.getBookName());
     }
 
     void returnBook(int bookTaken) {
@@ -68,6 +68,6 @@ class LibraryUser {
     }
 
     void returnBook(Book book) {
-        System.out.println("Читатель " + getFullname() + " вернул книгу - " + book.getBookname());
+        System.out.println("Читатель " + getFullname() + " вернул книгу - " + book.getBookName());
     }
 }

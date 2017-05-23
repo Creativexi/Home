@@ -1,13 +1,13 @@
 package less7.Libary;
 
 public class Book {
-    private String bookname;
+    private String bookName;
 
-    public Book(String bookname) {
-        this.bookname = bookname;
+    public Book(String bookName) {
+        this.bookName = bookName;
     }
-    public String getBookname() {
-        return bookname;
+    public String getBookName() {
+        return bookName;
     }
 
 }
