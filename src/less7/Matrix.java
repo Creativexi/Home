@@ -44,7 +44,7 @@ public class Matrix {
     public void print() {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++) {
-                System.out.print(this.matrix[i][j]);
+                System.out.print(this.matrix[i][j] + " ");
             }
             System.out.println();
         }
