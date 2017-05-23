@@ -27,15 +27,14 @@ public class Matrix {
         return matrix[line][column];
     }
 
-    public Matrix sum(Matrix matrix) {
+    public void sum(Matrix matrix) {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++)
-                matrix.setElement(i, j, matrix.matrixGetElement(i, j) + this.matrixGetElement(i, j));
+                this.matrix[i][j] = this.matrix[i][j] + matrix.matrix[i][j];
         }
-        return matrix;
     }
 
-    public void multi( int x) {
+    public void multi(int x) {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++)
                 this.setElement(i, j, this.matrixGetElement(i, j) * x);
@@ -51,4 +50,3 @@ public class Matrix {
         }
     }
 }
-//в суммах проверить на равнозначность матриц
