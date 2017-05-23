@@ -59,16 +59,15 @@ class LibraryUser {
         System.out.println("Читатель " + getFullname() + " взял книгу - " + book.getBookname());
     }
 
-    void returnBook(int booktaken) {
-        System.out.println("Количество возвращенных книг: " + booktaken);
+    void returnBook(int bookTaken) {
+        System.out.println("Количество возвращенных книг: " + bookTaken);
     }
 
-    void returnBook(String bookname) {
-        System.out.println("Читетель вернул книгу " + bookname);
+    void returnBook(String bookName) {
+        System.out.println("Читетель вернул книгу " + bookName);
     }
 
     void returnBook(Book book) {
         System.out.println("Читатель " + getFullname() + " вернул книгу - " + book.getBookname());
     }
 }
-//20310

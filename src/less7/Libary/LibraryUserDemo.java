@@ -2,7 +2,6 @@ package less7.Libary;
 
 public class LibraryUserDemo {
     public static void main(String[] args) {
-
         Book math = new Book("Математика");
         LibraryUser user1 = new LibraryUser();
         LibraryUser user2 = new LibraryUser();
@@ -11,9 +10,11 @@ public class LibraryUserDemo {
         users[1] = user2;
         userSet1(user1);
         userSet2(user2);
+
         System.out.println("Читатели библиотеки:");
-        userOut(users[0]);
-        userOut(users[1]);
+        for (LibraryUser user : users) {
+            userOut(user);
+        }
         user1.takeBook(math);
         user1.returnBook(math);
         user1.returnBook(1);
