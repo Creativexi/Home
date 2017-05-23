@@ -1,15 +1,17 @@
 package less8.flower;
 
 /**
- Создать класс "Flower", который содержит переменные имя и стоимость.
- Собрать 3 букета (используем массив) с определением их стоимости.
- Также подсчитать количество проданных цветов (используем статический метод).
+ * Создать класс "Flower", который содержит переменные имя и стоимость.
+ * Собрать 3 букета (используем массив) с определением их стоимости.
+ * Также подсчитать количество проданных цветов (используем статический метод).
  */
-public class Flower {
+public class Flower extends Booket {
     public String name;
     public int cost;
+    private static int flowerCount;
 
-    public Flower() {
+    public static int getFlowerCount() {
+        return flowerCount;
     }
 
     public String getName() {
@@ -31,15 +33,6 @@ public class Flower {
     public Flower(String name, int cost) {
         this.name = name;
         this.cost = cost;
+        flowerCount++;
     }
-
-    public static Booket getBouquet(Flower... flowers) {
-        Flower flower[] = new Flower[flowers.length];
-        for (int i = 0; i < flowers.length;
-        i++) {
-            flower[i] = flowers[i];
-    }
-        return new Booket(flower);
-    }
-
 }

@@ -1,11 +1,12 @@
 package less8.flower;
 
-public class Booket extends Flower{
+public class Booket {
 
-    private Flower[] flowers;
-    public Booket(Flower... flowers) {
-        this.flowers = flowers;
+    public String toString() {
+        String info = "Букет состоит из:\n";
+        for (Flower flower : flowers) {
+            info += flower.getName();
+        }
+        return info;
     }
-
-
 }
