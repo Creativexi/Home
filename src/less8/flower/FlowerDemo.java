@@ -25,7 +25,7 @@ public class FlowerDemo {
                 new Flower("Aster", 22),
                 new Flower("Aster", 22),
         };
-        printBooketInfo(booket1);
+        printBooketInfo(booket2);
         flowerSold();
     }
 }

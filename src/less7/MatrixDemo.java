@@ -2,7 +2,7 @@ package less7;
 
 public class MatrixDemo {
     public static void main(String[] args) {
-        Matrix matrix1 = new Matrix(2, 2);
+        Matrix matrix1 = new Matrix(3, 2);
         Matrix matrix2 = new Matrix(2, 2);
         matrix1.fillMatrix();
         matrix2.fillMatrix();
@@ -13,9 +13,8 @@ public class MatrixDemo {
         matrix2.print();
         System.out.println("sum");
         matrix1.sum(matrix2);
-        matrix1.print();
         System.out.println("multiply");
-        matrix1.multi(4);
-        matrix1.print();
+        matrix2.multi(4);
+        matrix2.print();
     }
 }

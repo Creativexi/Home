@@ -5,39 +5,47 @@ public class Matrix {
     private int line;
     private int column;
 
+    public int getLine() {
+        return line;
+    }
+
+    public int getColumn() {
+        return column;
+    }
+
     public Matrix(int line, int column) {
         matrix = new double[line][column];
         this.line = line;
         this.column = column;
     }
 
-    public void setElement(int line, int column, double value) {
-        matrix[line][column] = value;
-    }
-
     public void fillMatrix() {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++) {
-                this.setElement(i, j, Math.random());
+                matrix[i][j] = Math.random();
             }
         }
     }
 
-    public double matrixGetElement(int line, int column) {
-        return matrix[line][column];
-    }
-
     public void sum(Matrix matrix) {
-        for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++)
-                this.matrix[i][j] = this.matrix[i][j] + matrix.matrix[i][j];
+        if (this.column == matrix.getColumn() && this.line == matrix.getLine()) {
+            for (int i = 0; i < line; i++) {
+                for (int j = 0; j < column; j++) {
+
+                    this.matrix[i][j] = this.matrix[i][j] + matrix.matrix[i][j];
+                }
+            }
+            matrix.print();
+        } else {
+            System.out.println("Матрицы не равны");
         }
+
     }
 
     public void multi(int x) {
         for (int i = 0; i < line; i++) {
             for (int j = 0; j < column; j++)
-                this.setElement(i, j, this.matrixGetElement(i, j) * x);
+                this.matrix[i][j] = this.matrix[i][j] * x;
         }
     }
 
