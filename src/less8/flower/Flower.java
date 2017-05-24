@@ -1,9 +1,12 @@
 package less8.flower;
 
 public class Flower {
-    private String name;
-    private int cost;
+    public String name;
+    public int cost;
     private static int flowerCount;
+
+    public Flower() {
+    }
 
     public String getName() {
         return name;
@@ -13,18 +16,18 @@ public class Flower {
         return cost;
     }
 
+    public Flower(String name, int cost) {
+        this.name = name;
+        this.cost = cost;
+        flowerCount++;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
 
     public void setCost(int cost) {
         this.cost = cost;
-    }
-
-    public Flower(String name, int cost) {
-        this.name = name;
-        this.cost = cost;
-        flowerCount++;
     }
 
     public static void printBooketInfo(Flower[] booket) {
