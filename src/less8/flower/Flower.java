@@ -5,12 +5,20 @@ public class Flower {
     private int cost;
     private static int flowerCount;
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private int getCost() {
+    public int getCost() {
         return cost;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
     public Flower(String name, int cost) {
