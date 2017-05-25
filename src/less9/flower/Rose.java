@@ -12,20 +12,24 @@ public class Rose extends Flower {
         roseCount++;
     }
 
+    @Override
+    public int getCost() {
+        return cost = cost;
+    }
+
     public static int getRoseCount() {
         return roseCount;
     }
 
     public static void roseSoldPrint() {
-        System.out.println("количество проданных роз:" + getRoseCount());
+        System.out.println("количество проданных роз - " + getRoseCount());
     }
 
-
-    public int getCost(Flower roses[]) {
-       int price = 0;
-        for(Flower flower: roses){
-           price += flower.getCost();
-       }
-        return price;
+    public static void rosePrice(Flower[] flowers) {
+        int price = 0;
+        for (Flower flower : flowers) {
+            price += flower.getCost();
+        }
+        System.out.println("стоимость проданных роз - " + price);
     }
 }

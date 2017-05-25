@@ -6,7 +6,7 @@ public class Driver extends Person {
 
     private int exp;
 
-    Driver(String n, int a) {
+    public Driver(String n, int a) {
         super(n, a);
     }
 

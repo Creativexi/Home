@@ -8,7 +8,7 @@ public class CarDemo {
     public static void main(String[] args) {
         Car car = new Car();
         Engine engine = new Engine();
-        Driver driver = new Driver();
+        Driver driver = new Driver("vova", 50);
         engine.setManufacturer("BMW");
         engine.setPower(200);
         car.setClas("S");

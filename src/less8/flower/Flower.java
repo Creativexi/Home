@@ -1,6 +1,6 @@
 package less8.flower;
 
-public class Flower {
+public abstract class Flower {
     public String name;
     public int cost;
     private static int flowerCount;
@@ -12,9 +12,7 @@ public class Flower {
         return name;
     }
 
-    public int getCost() {
-        return cost;
-    }
+    public abstract int getCost();
 
     public Flower(String name, int cost) {
         this.name = name;
