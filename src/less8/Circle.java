@@ -31,6 +31,26 @@ public class Circle {
         double d = getPI() * (getRadius() * 2);
         System.out.println(d);
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return radius == circle.radius;
+    }
+
+    @Override
+    public int hashCode() {
+        return radius;
+    }
 }
 
 

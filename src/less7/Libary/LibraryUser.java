@@ -13,6 +13,7 @@ class LibraryUser {
 
     public String getFaculty() {
         return faculty;
+
     }
 
     public int getTicketNum() {
@@ -69,5 +70,38 @@ class LibraryUser {
 
     void returnBook(Book book) {
         System.out.println("Читатель " + getFullname() + " вернул книгу - " + book.getBookName());
+    }
+
+    @Override
+    public String toString() {
+        return "LibraryUser{" +
+                "fullName='" + fullName + '\'' +
+                ", ticketNum=" + ticketNum +
+                ", faculty='" + faculty + '\'' +
+                ", birthDate=" + birthDate +
+                ", tel=" + tel +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        LibraryUser that = (LibraryUser) o;
+        if (ticketNum != that.ticketNum) return false;
+        if (birthDate != that.birthDate) return false;
+        if (tel != that.tel) return false;
+        if (fullName != null ? !fullName.equals(that.fullName) : that.fullName != null) return false;
+        return faculty != null ? faculty.equals(that.faculty) : that.faculty == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = fullName != null ? fullName.hashCode() : 0;
+        result = 31 * result + ticketNum;
+        result = 31 * result + (faculty != null ? faculty.hashCode() : 0);
+        result = 31 * result + birthDate;
+        result = 31 * result + tel;
+        return result;
     }
 }

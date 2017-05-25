@@ -7,6 +7,7 @@ public class Rose extends Flower {
     private static int roseCount;
 
     public Rose() {
+        super.setName("Rose");
         super.setCost(20);
         roseCount++;
     }
@@ -20,9 +21,9 @@ public class Rose extends Flower {
     }
 
 
-    public  int getCost(Rose[] booket) {
+    public int getCost(Flower roses[]) {
        int price = 0;
-        for(Flower flower: booket){
+        for(Flower flower: roses){
            price += flower.getCost();
        }
         return price;

@@ -1,5 +1,7 @@
 package less7;
 
+import java.util.Arrays;
+
 public class Matrix {
     private double[][] matrix;
     private int line;
@@ -39,7 +41,6 @@ public class Matrix {
         } else {
             System.out.println("Матрицы не равны");
         }
-
     }
 
     public void multi(int x) {
@@ -56,5 +57,34 @@ public class Matrix {
             }
             System.out.println();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Matrix{" +
+                "matrix=" + Arrays.toString(matrix) +
+                ", line=" + line +
+                ", column=" + column +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Matrix matrix1 = (Matrix) o;
+
+        if (line != matrix1.line) return false;
+        if (column != matrix1.column) return false;
+        return Arrays.deepEquals(matrix, matrix1.matrix);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Arrays.deepHashCode(matrix);
+        result = 31 * result + line;
+        result = 31 * result + column;
+        return result;
     }
 }

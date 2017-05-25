@@ -9,7 +9,7 @@ import static less9.flower.Rose.roseSoldPrint;
 public class Demo {
     public static void main(String[] args) {
 
-        Flower[] roses = new Rose[101];
+        Flower roses[] = new Rose[101];
         for (int i = 0; i < roses.length; i++) {
             roses[i] = new Rose();
         }
@@ -28,7 +28,10 @@ public class Demo {
                 new Daisy(),
         };
 
-      //  getCost(roses);
+
+
+
+
 
     }
 }

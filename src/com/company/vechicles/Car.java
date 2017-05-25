@@ -53,4 +53,31 @@ public class Car {
         System.out.println("Водитель: " + driver.getFullName() + ", стаж вождения: " + driver.getExp());
         System.out.println("Производитель двигателя: " + engine.getManufacturer() + ", мощность: " + engine.getPower());
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "mark='" + mark + '\'' +
+                ", clas='" + clas + '\'' +
+                ", veight=" + veight +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        if (veight != car.veight) return false;
+        if (mark != null ? !mark.equals(car.mark) : car.mark != null) return false;
+        return clas != null ? clas.equals(car.clas) : car.clas == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = mark != null ? mark.hashCode() : 0;
+        result = 31 * result + (clas != null ? clas.hashCode() : 0);
+        result = 31 * result + veight;
+        return result;
+    }
 }
