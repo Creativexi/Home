@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="77be6419-a740-4e2f-b2a9-5c74975369d5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/details/Engine.java" afterPath="$PROJECT_DIR$/src/com/company/details/Engine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/professions/Driver.java" afterPath="$PROJECT_DIR$/src/com/company/professions/Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/vechicles/Car.java" afterPath="$PROJECT_DIR$/src/com/company/vechicles/Car.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/Libary/LibraryUser.java" afterPath="$PROJECT_DIR$/src/less7/Libary/LibraryUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/Matrix.java" afterPath="$PROJECT_DIR$/src/less7/Matrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less7/Person.java" afterPath="$PROJECT_DIR$/src/less7/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less8/Circle.java" afterPath="$PROJECT_DIR$/src/less8/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less8/flower/Flower.java" afterPath="$PROJECT_DIR$/src/less8/flower/Flower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/animals/Animal.java" afterPath="$PROJECT_DIR$/src/less9/animals/Animal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/animals/Cat.java" afterPath="$PROJECT_DIR$/src/less9/animals/Cat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/animals/Dog.java" afterPath="$PROJECT_DIR$/src/less9/animals/Dog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/animals/Horse.java" afterPath="$PROJECT_DIR$/src/less9/animals/Horse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/flower/Demo.java" afterPath="$PROJECT_DIR$/src/less9/flower/Demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less9/flower/Rose.java" afterPath="$PROJECT_DIR$/src/less9/flower/Rose.java" />
     </list>
     <list id="4f42e06f-32b9-4d12-b9f1-de01e4ce62e5" name="Rejected commit: Default" comment="home" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -852,7 +838,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495653929021</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="home">
+      <created>1495700053745</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1495700053745</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
