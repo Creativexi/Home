@@ -8,6 +8,7 @@ public class Tulip extends Flower {
     public Tulip() {
         super.setCost(33);
         tulipCount++;
+        flowerCount++;
     }
 
     @Override

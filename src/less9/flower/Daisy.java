@@ -8,6 +8,7 @@ public class Daisy extends Flower {
     public Daisy() {
         super.setCost(15);
         daisyCount++;
+        flowerCount++;
     }
 
     @Override

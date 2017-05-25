@@ -10,6 +10,7 @@ public class Rose extends Flower {
         super.setName("Rose");
         super.setCost(20);
         roseCount++;
+        flowerCount++;
     }
 
     @Override

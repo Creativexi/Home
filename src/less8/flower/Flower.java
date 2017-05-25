@@ -3,7 +3,7 @@ package less8.flower;
 public abstract class Flower {
     public String name;
     public int cost;
-    private static int flowerCount;
+    public static int flowerCount;
 
     public Flower() {
     }
@@ -13,12 +13,6 @@ public abstract class Flower {
     }
 
     public abstract int getCost();
-
-    public Flower(String name, int cost) {
-        this.name = name;
-        this.cost = cost;
-        flowerCount++;
-    }
 
     public void setName(String name) {
         this.name = name;

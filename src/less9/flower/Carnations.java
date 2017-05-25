@@ -8,6 +8,7 @@ public class Carnations extends Flower {
     public Carnations() {
         super.setCost(50);
         carnationsCount++;
+        flowerCount++;
     }
 
     public static int getCarnationsCount() {
