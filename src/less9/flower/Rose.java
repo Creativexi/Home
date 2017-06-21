@@ -8,14 +8,13 @@ public class Rose extends Flower {
 
     public Rose() {
         super.setName("Rose");
-        super.setCost(20);
         roseCount++;
         flowerCount++;
     }
 
     @Override
     public int getCost() {
-        return cost = cost;
+        return 30;
     }
 
     public static int getRoseCount() {

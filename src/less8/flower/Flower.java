@@ -1,8 +1,7 @@
 package less8.flower;
 
 public abstract class Flower {
-    public String name;
-    public int cost;
+    private String name;
     public static int flowerCount;
 
     public Flower() {
@@ -16,10 +15,6 @@ public abstract class Flower {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setCost(int cost) {
-        this.cost = cost;
     }
 
     public static void printBooketInfo(Flower[] booket) {
@@ -58,29 +53,5 @@ public abstract class Flower {
 
     public static void flowerSold() {
         System.out.println("Всего цветков было продано: " + flowerCount + " шт");
-    }
-
-    @Override
-    public String toString() {
-        return "Flower{" +
-                "name='" + name + '\'' +
-                ", cost=" + cost +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Flower flower = (Flower) o;
-        if (cost != flower.cost) return false;
-        return name != null ? name.equals(flower.name) : flower.name == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + cost;
-        return result;
     }
 }

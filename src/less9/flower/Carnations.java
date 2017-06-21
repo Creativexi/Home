@@ -6,7 +6,6 @@ public class Carnations extends Flower {
     private static int carnationsCount;
 
     public Carnations() {
-        super.setCost(50);
         carnationsCount++;
         flowerCount++;
     }
@@ -17,7 +16,7 @@ public class Carnations extends Flower {
 
     @Override
     public int getCost() {
-        return cost;
+        return 5;
     }
 
     public static void printCarnationsSold() {

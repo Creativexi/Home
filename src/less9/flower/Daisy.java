@@ -6,14 +6,14 @@ public class Daisy extends Flower {
     private static int daisyCount;
 
     public Daisy() {
-        super.setCost(15);
+
         daisyCount++;
         flowerCount++;
     }
 
     @Override
     public int getCost() {
-        return cost;
+        return 16;
     }
 
     public static int getDaisyCount() {

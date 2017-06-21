@@ -6,14 +6,13 @@ public class Tulip extends Flower {
     private static int tulipCount;
 
     public Tulip() {
-        super.setCost(33);
         tulipCount++;
         flowerCount++;
     }
 
     @Override
     public int getCost() {
-        return cost;
+        return 20;
     }
 
     public static int getTulipCount() {
