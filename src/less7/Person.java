@@ -1,16 +1,32 @@
 package less7;
 
 public class Person {
-    public String fullName;
-    public int age;
+    private String fullName;
+    private int age;
 
-    Person() {
+    public Person() {
     }
 
-    public Person(String n, int a) {
-        age = a;
+    public int getAge() {
+        return age;
+    }
 
-        fullName = n;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getFullName() {
+
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public Person(String fullName, int age) {
+        this.age = age;
+        this.fullName = fullName;
     }
 
     void move() {
