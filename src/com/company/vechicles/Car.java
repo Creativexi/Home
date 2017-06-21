@@ -7,6 +7,24 @@ public class Car {
     private String mark;
     private String clas;
     private int veight;
+    private Driver driver;
+    private Engine engine;
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 
     private int getVeight() {
         return veight;
@@ -48,19 +66,12 @@ public class Car {
         System.out.println("Поворот направо");
     }
 
-    public void printInfo(Car car, Engine engine, Driver driver) {
-        System.out.println("Машина: " + car.getMark() + " класса: " + car.getClas() + ". Вес: " + car.getVeight() + "кг");
-        System.out.println("Водитель: " + driver.getFullName() + ", стаж вождения: " + driver.getExp());
-        System.out.println("Производитель двигателя: " + engine.getManufacturer() + ", мощность: " + engine.getPower());
-    }
 
     @Override
     public String toString() {
-        return "Car{" +
-                "mark='" + mark + '\'' +
-                ", clas='" + clas + '\'' +
-                ", veight=" + veight +
-                '}';
+        return "Машина: " + this.getMark() + " класса: " + this.getClas() + ". Вес: " + this.getVeight() + " кг" +
+                " Водитель: " + this.driver.getFullName() + ", стаж вождения: " + this.driver.getExp() +
+                ", Производитель двигателя: " + this.engine.getManufacturer() + ", мощность: " + this.engine.getPower();
     }
 
     @Override

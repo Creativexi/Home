@@ -3,11 +3,10 @@ package less9.flower;
 import less8.flower.Flower;
 
 public class Carnations extends Flower {
-    private static int carnationsCount;
+    public static int carnationsCount;
 
     public Carnations() {
         carnationsCount++;
-        flowerCount++;
     }
 
     public static int getCarnationsCount() {

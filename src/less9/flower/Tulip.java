@@ -3,11 +3,10 @@ package less9.flower;
 import less8.flower.Flower;
 
 public class Tulip extends Flower {
-    private static int tulipCount;
+    public static int tulipCount;
 
     public Tulip() {
         tulipCount++;
-        flowerCount++;
     }
 
     @Override

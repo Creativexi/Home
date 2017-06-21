@@ -16,7 +16,9 @@ public class CarDemo {
         car.setVeight(1000);
         driver.setFullName("Владимир");
         driver.setExp(5);
-        car.printInfo(car, engine, driver);
+        car.setEngine(engine);
+        car.setDriver(driver);
+        System.out.println(car);
         car.left();
         car.right();
         car.start();

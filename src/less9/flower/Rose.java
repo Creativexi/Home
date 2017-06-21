@@ -4,12 +4,11 @@ import less8.flower.Flower;
 
 public class Rose extends Flower {
 
-    private static int roseCount;
+    public static int roseCount;
 
     public Rose() {
         super.setName("Rose");
         roseCount++;
-        flowerCount++;
     }
 
     @Override

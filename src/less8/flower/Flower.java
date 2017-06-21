@@ -1,10 +1,16 @@
 package less8.flower;
 
+import static less9.flower.Carnations.carnationsCount;
+import static less9.flower.Daisy.daisyCount;
+import static less9.flower.Rose.roseCount;
+import static less9.flower.Tulip.tulipCount;
+
 public abstract class Flower {
     private String name;
     public static int flowerCount;
 
     public Flower() {
+        flowerCount++;
     }
 
     public String getName() {
@@ -18,36 +24,15 @@ public abstract class Flower {
     }
 
     public static void printBooketInfo(Flower[] booket) {
-        int flowerCountRose = 0;
-        int flowerCountLily = 0;
-        int flowerCountDaisy = 0;
-        int flowerCountLotus = 0;
-        int flowerCountAster = 0;
         int price = 0;
         for (Flower flower : booket) {
             price += flower.getCost();
-            if (flower.getName().equals("Rose")) {
-                flowerCountRose = ++flowerCountRose;
-            }
-            if (flower.getName().equals("Lily")) {
-                flowerCountLily = ++flowerCountLily;
-            }
-            if (flower.getName().equals("Aster")) {
-                flowerCountAster = ++flowerCountAster;
-            }
-            if (flower.getName().equals("Lotus")) {
-                flowerCountLotus = ++flowerCountLotus;
-            }
-            if (flower.getName().equals("Daisy")) {
-                flowerCountDaisy = ++flowerCountDaisy;
-            }
         }
         System.out.println("Букет состоит из:");
-        System.out.println("Роз: " + flowerCountRose + " шт");
-        System.out.println("Лилий: " + flowerCountLily + " шт");
-        System.out.println("Астр: " + flowerCountAster + " шт");
-        System.out.println("Лотосов: " + flowerCountLotus + " шт");
-        System.out.println("Маргариток: " + flowerCountDaisy + " шт");
+        System.out.println("Роз: " + roseCount + " шт");
+        System.out.println("Тюльпанов: " + tulipCount + " шт");
+        System.out.println("Гвоздик: " + carnationsCount + " шт");
+        System.out.println("Маргариток: " + daisyCount + " шт");
         System.out.println("Стоимость букета: " + price);
     }
 
