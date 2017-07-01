@@ -1,7 +1,7 @@
 package less7;
 
 public class Person {
-    private String fullName;
+    public String fullName;
     private int age;
 
     public Person() {
