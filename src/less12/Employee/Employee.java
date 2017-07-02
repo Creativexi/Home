@@ -8,6 +8,27 @@ package less12.Employee;
  десятичное значение имеет 2 знака после запятой и можете добавить что-нибудь свое.
  */
 public class Employee {
-    String fullname;
+    String fullName;
     double salary;
+
+    public Employee(String fullname, double salary) {
+        this.fullName = fullname;
+        this.salary = salary;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullname) {
+        this.fullName = fullname;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }

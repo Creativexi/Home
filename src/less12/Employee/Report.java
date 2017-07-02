@@ -1,7 +1,13 @@
 package less12.Employee;
 
-/**
- * Created by dudnik on 02.07.2017.
- */
+import java.util.Locale;
+
 public class Report {
-}
+    public static void reportView(Employee[] employees) {
+        System.out.printf("%-20s       %s\n", "Employee Fullname",  "Salary");
+        for (Employee employee : employees) {
+            System.out.printf("%-25s    %.2f\n", employee.getFullName(), employee.getSalary());
+        }
+
+        }
+    }
