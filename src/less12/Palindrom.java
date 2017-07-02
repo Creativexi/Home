@@ -1,9 +1,5 @@
 package less12;
 
-import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Palindrom {
     public static void main(String[] args) {
         String l = "Если есть хвосты по дз, начните с 1 не сданного задания. 123 324 111 4554";
