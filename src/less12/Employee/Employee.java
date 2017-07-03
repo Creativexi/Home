@@ -1,23 +1,24 @@
 package less12.Employee;
 
-/**
- Создать класс Employee, у которого есть переменные класса - fullname, salary.
- Создать массив содержащий несколько объектов этого типа. Создать класс Report,
- который будет содержать статический метод generateReport, в котором выводится информация о зарплате всех сотрудников.
- Используйте форматировании строк. Пусть salary будет выровнено по правому краю,
- десятичное значение имеет 2 знака после запятой и можете добавить что-нибудь свое.
- */
+import java.util.Date;
+
 public class Employee {
     String fullName;
     double salary;
+    Date salaryDate ;
 
-    public Employee(String fullname, double salary) {
+    public Employee(String fullname, double salary, Date salaryDate) {
         this.fullName = fullname;
         this.salary = salary;
+        this.salaryDate = salaryDate;
     }
 
     public String getFullName() {
         return fullName;
+    }
+
+    public Date getSalaryDate() {
+        return salaryDate;
     }
 
     public void setFullName(String fullname) {
