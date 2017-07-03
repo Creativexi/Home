@@ -11,6 +11,7 @@ public class Demo {
                 new Employee("Sarah C.", 4150, new Date()),
                 new Employee("David B.", 3200, new Date()),
         };
-        FullReport.generateFullReport(Locale.UK, employees);
+        FullReport.fullReportView(Locale.UK, employees);
+        Report.reportView(employees);
     }
 }
