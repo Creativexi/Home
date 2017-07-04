@@ -1,3 +1,4 @@
+/*
 package less7;
 
 public class MatrixDemo {
@@ -18,3 +19,4 @@ public class MatrixDemo {
         matrix2.print();
     }
 }
+*/
